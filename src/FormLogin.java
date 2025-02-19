@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author rifki
+ * 
  */
 public class FormLogin extends javax.swing.JFrame {
 
@@ -36,7 +36,6 @@ public class FormLogin extends javax.swing.JFrame {
         closeBTN = new javax.swing.JButton();
         LoginBT = new javax.swing.JButton();
         passwordTF = new javax.swing.JPasswordField();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -50,45 +49,51 @@ public class FormLogin extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("ID User");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 451, -1, -1));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Username");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Password");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 507, -1, -1));
-        jPanel1.add(userTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 448, 171, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, -1, -1));
 
-        closeBTN.setBackground(new java.awt.Color(0, 102, 204));
-        closeBTN.setText("Close");
+        userTF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(userTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 171, -1));
+
+        closeBTN.setBackground(new java.awt.Color(255, 102, 102));
+        closeBTN.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        closeBTN.setText("Keluar");
         closeBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 closeBTNActionPerformed(evt);
             }
         });
-        jPanel1.add(closeBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 557, -1, -1));
+        jPanel1.add(closeBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, -1, -1));
 
-        LoginBT.setBackground(new java.awt.Color(0, 102, 204));
-        LoginBT.setText("Login");
+        LoginBT.setBackground(new java.awt.Color(153, 255, 153));
+        LoginBT.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        LoginBT.setText("Masuk");
         LoginBT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoginBTActionPerformed(evt);
             }
         });
-        jPanel1.add(LoginBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 557, -1, -1));
-        jPanel1.add(passwordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 504, 171, -1));
+        jPanel1.add(LoginBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel4.setText("WELCOME!!!");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 6, -1, -1));
+        passwordTF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(passwordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 171, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("APLIKASI CATATAN HARIAN");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 55, 337, 24));
+        jLabel5.setText("CATATAN HARIAN");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 337, 24));
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/note.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/brown.png"))); // NOI18N
         jLabel6.setPreferredSize(new java.awt.Dimension(200, 200));
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 620));
 
@@ -166,7 +171,6 @@ public class FormLogin extends javax.swing.JFrame {
     private javax.swing.JButton closeBTN;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
